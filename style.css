@@ -1,0 +1,193 @@
+/* RESET SEDERHANA */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+.bungkus {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+/* KEPALA / HEADER */
+.kepala-web {
+    background: #181512;
+    color: white;
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.kepala-web .bungkus {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-teks {
+    font-size: 18px;
+    margin: 0;
+    color: #d4af37;
+}
+
+.menu-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.menu-nav li {
+    margin-left: 15px;
+}
+
+.menu-nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.menu-nav a:hover {
+    color: #d4af37;
+}
+
+/* BANNER UTAMA */
+.banner-utama {
+    background: #27221d;
+    color: white;
+    text-align: center;
+    padding: 70px 20px;
+}
+
+.banner-utama h1 {
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.banner-utama p {
+    font-size: 14px;
+    color: #d1c7bd;
+    margin-bottom: 20px;
+}
+
+.tombol-pesan {
+    background: #d4af37;
+    color: #111;
+    font-weight: bold;
+    padding: 10px 20px;
+    text-decoration: none;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.tombol-pesan:hover {
+    background: #b5932a;
+}
+
+/* BAGIAN KOTAK */
+.bagian-kotak {
+    padding: 50px 0;
+}
+
+.bagian-kotak h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+.abu {
+    background: #f9f8f6;
+}
+
+/* KARTU PRODUK */
+.kotak-flex {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.item-kartu {
+    background: white;
+    width: 320px;
+    padding: 20px;
+    border: 1px solid #e8e4dc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.item-kartu img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+    background-color: #fafafa;
+    border-radius: 3px;
+    margin-bottom: 12px;
+}
+
+.item-kartu h3 {
+    font-size: 16px;
+    margin-top: 0;
+    color: #1e1b18;
+}
+
+.item-kartu p {
+    font-size: 13px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.harga {
+    font-weight: bold;
+    color: #b5932a;
+    font-size: 14px;
+}
+
+/* FORM PESAN */
+.form-pesan {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.form-pesan input,
+.form-pesan textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+/* FOOTER */
+.kaki-web {
+    background: #141210;
+    color: #8c827a;
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+}
+
+/* RESPONSIVE LAYAR HP */
+@media(max-width: 650px) {
+    .kepala-web .bungkus {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .kotak-flex {
+        flex-direction: column;
+        align-items: center;
+    }
+    .item-kartu {
+        width: 100%;
+    }
+}
